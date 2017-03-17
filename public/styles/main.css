@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+    font-family: "Lucida Sans";
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.global {
+    padding: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.main-banner img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #c2c2c2;
+}
+
+.shop-wrapper {
+    max-width: 100%;
+    
+}
+
+.shops {
+    margin-top: 20px;
+    
+    box-sizing: border-box;
+}
+
+.shop-banner {
+    
+    box-sizing: border-box;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.shop-division {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.shop-division a {
+
+}
+
+.shop-division a img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #c2c2c2;
+}
+
+@media(max-width: 500px) {
+    .full {
+        display: none;
+    }
+}
+
+@media(min-width: 501px) {
+    .mobile, .mobile-search {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+
+
+    .list {
+        display: none;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .list {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 994px) {
+    .search {
+        display: none;
+    }
+}

@@ -1,1 +1,3 @@
 # devmtn-personal-project
+
+This is my personal project, to be presented 3/27/17 to Dev Mountain cohort #19.  I am cloning as many features as possible in the time given, from the Gibson guitars main website, which is done in ASP.  I will use Angular, Node, Jquery, JavaScript, PostGreSQL.....

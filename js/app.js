@@ -1,0 +1,1 @@
+angular.module('gibson', ['ui.router']);
