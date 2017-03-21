@@ -1,0 +1,19 @@
+{
+  "name": "devmtn-personal-project",
+  "version": "1.0.0",
+  "description": "This is my personal project, to be presented 3/27/17 to Dev Mountain cohort #19.  I am cloning, or shall we say -remixing-, the Gibson Guitar Co. commercial website.  In order, what I wish to accomplish in terms of functionality of the site in two weeks' time:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aquasaurious/devmtn-personal-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aquasaurious/devmtn-personal-project/issues"
+  },
+  "homepage": "https://github.com/aquasaurious/devmtn-personal-project#readme"
+}

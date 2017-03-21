@@ -12,6 +12,7 @@
 }
 
 
+
 .hamburger {
     justify-content: space-between;
 }
@@ -51,10 +52,41 @@
 }
 
 .primary-nav li {
-    
-    padding: 12px;
+    padding: 8px 0;
+}
+
+.primary-nav li a {
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #787878;
+    position: relative;
+    z-index: 9999;
     border-right: 1px solid #c1c1c1;
-    color: #828282;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 12px;
+}
+
+
+.submenu {
+    display: none;
+}
+
+.primary-nav li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index:  99;
+    margin-top: 30px;
+    border: 1px solid #c1c1c1;
+    border-top: none;
+    text-align: left;
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 0;
 }
 
 .search input {
