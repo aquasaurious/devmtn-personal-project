@@ -1,1 +1,0 @@
-angular.module('gibson').service('mainSRV', function())

@@ -3,7 +3,7 @@ angular.module('gibson', ['ui.router']).config(function($stateProvider, $urlRout
     $stateProvider
     .state('home', {
         url: '/',
-        templateUrl: './index.html',
+        templateUrl: './views/index.html',
         controller: 'mainCTRL'
     })
     .state('usa', {
@@ -19,7 +19,9 @@ angular.module('gibson', ['ui.router']).config(function($stateProvider, $urlRout
     .state('acoustic', {
         url: '/acoustic',
         templateUrl: './views/acoustic.html',
-        controller: 'shopCTRL'
+        controller: function($scope) {
+            console.log("routing to acoustic page");
+        }
     })
     .state('custom', {
         url: '/custom',

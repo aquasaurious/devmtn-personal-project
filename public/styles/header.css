@@ -21,9 +21,6 @@ $animationDuration: .2s;
     margin-right: 15px;
 }
 
-
-
-
 .navbar-toggle {
     background: white;
     border-radius: 4px;
@@ -38,11 +35,14 @@ $animationDuration: .2s;
     margin: 5px;
 }
 
+.menu-wrapper {
+}
 
 .nav-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     border-top: 1px solid #c1c1c1;
     border-bottom: 1px solid #c1c1c1;
     color: #828282;
@@ -50,7 +50,6 @@ $animationDuration: .2s;
     margin-bottom: 15px;
     margin-top: 15px;
 }
-
 
 .site-nav {
     display: flex;
@@ -88,28 +87,34 @@ $animationDuration: .2s;
     display: none;
 }
 
-
-
 .mobile-site {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.mobile-menu ul{
-    display: flex;
-    flex-direction: column;
-    height: auto;
+.mobile-menu {
+    display: none;
     width: 100%;
-    border: 1px solid #333;
+    text-align: center;
+}
+
+.mobile-menu ul li{
+    width: 100%;
+    border: 1px solid #c1c1c1;
+    padding 10px;
+    height: auto;
 }
 
 #hamburger {
-    --display: none;
+    position: absolute;
+    left: -100%;
+    top: -100%;
 }
 
-#hamburger:checked ~ .mobile-menu {
-    display: none !important;
+#hamburger:checked ~ div.mobile-menu {
+    display: block;
 }
 
 .menuicon {
@@ -120,12 +125,9 @@ $animationDuration: .2s;
     color: #333;
 }
 
-
 .search, .mobile-search {
     width: 192px;
 }
-
-
 
 @media(max-width: 370px) {
     .language-box {
