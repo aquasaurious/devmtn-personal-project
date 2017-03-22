@@ -1,4 +1,5 @@
-<div class="top-banner">
+<div class="header-main">
+    <div class="top-banner">
     <div>
         <img src="./img/front-page/Header-Gibson-Logo.png"/>
     </div>
@@ -12,18 +13,33 @@
         <span>USA: 1-800-4GIBSON</span>
         <span>Europe: 00+8004GIBSON1</span>
     </div>
-</div>
+    </div>
 
-<div class="menu-wrapper">
+    <div class="menu-wrapper">
             
             <div class="nav-menu">
-                <nav class="site-nav">
-                    <div class="hamburger">
-                        <button type="button" class="navbar-toggle">
-                            <span class="menu-icon-bar"></span>
-                            <span class="menu-icon-bar"></span>
-                            <span class="menu-icon-bar"></span>
-                        </button>
+                    <nav class="mobile-site">
+                        <div class="nav-button">
+                            <input type="checkbox" id="hamburger"/>
+                            <label class="menuicon" for="hamburger" onclick>
+                                <div class="menu-icon-bar"></div>
+                                <div class="menu-icon-bar"></div>
+                                <div class="menu-icon-bar"></div>
+                            </label>
+                        </div>
+                        <div class="mobile-search">
+                            <input name="mobile-site-search" type="text" value="search"/>
+                        </div>
+                    </nav>
+                    <div class="mobile-menu">
+                        <ul class="mobile-nav">
+                            <li><a ui-sref="home"><img src=".\img\front-page\Nav-GibsonCom.png" /></a></li>
+                            <li><a ui-sref="products">PRODUCTS</a></li>
+                            <li><a ui-sref="store">STORE</a></li>
+                            <li><a ui-sref="news">NEWS-LIFESTYLE</a></li>
+                            <li><a ui-sref="community">COMMUNITY</a></li>
+                            <li><a ui-sref="support">24/7 SUPPORT</a></li>
+                        </ul>
                     </div>
                     <ul class="primary-nav">
                         <li>
@@ -48,7 +64,19 @@
                                 <li>Pro Audio</li>
                             </ul>
                         </li>
-                        <li><a ui-sref="store">STORE</a></li>
+                        <li>
+                            <a ui-sref="store">STORE</a>
+                            <ul class="submenu">
+                                <li>Gear</li>
+                                <li>Hardware</li>
+                                <li>Historic</li>
+                                <li>Instrument Care</li>
+                                <li>Lifestyle</li>
+                                <li>Pickups and Electronics</li>
+                                <li>Instrument Cables</li>
+                            </ul>
+                        
+                        </li>
                         <li><a ui-sref="news">NEWS-LIFESTYLE</a></li>
                         <li><a ui-sref="community">COMMUNITY</a></li>
                         <li><a ui-sref="support">24/7 SUPPORT</a></li>
@@ -56,9 +84,7 @@
                     <div class="search">
                         <input name="site-search" type="text" value="search"/>
                     </div>
-                    <div class="mobile-search">
-                        <input name="mobile-site-search" type="text" value="search"/>
-                    </div>
                 </nav>
             </div>
+    </div>
 </div>
