@@ -1,5 +1,5 @@
 angular.module('gibson').service('mainSRV', function($http) {
-    var baseURL = 'localhost:8080';
+    var baseURL = 'http://localhost:8080/guitars';
 
     this.getProducts = $http.get(baseURL);
     this.getProductbyId = function(id) {

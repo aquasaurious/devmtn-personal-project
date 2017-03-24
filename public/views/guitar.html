@@ -1,22 +1,22 @@
 
 <div class='product-container'>
     <div class='item-content'>
-        <a href=''>
+        <a href='/acoustic/{{product.id}}'>
             <div class='thumb'>
-                <img ng-src='./img/{{store}}/{{imgurl}}'>
+                <img ng-src='../img/acoustic/{{product.imgurl}}'>
             </div>
             <div class='name'>
-                {{name}}
+                {{product.model}}
             </div>
             <div class='qualities'>
-                {{qualities[0]}}
+                {{product.qualities[0]}}
                 <br>
-                {{qualities[1]}}
+                {{product.qualities[1]}}
                 <br>
-                {{qualities[2]}}
+                {{product.qualities[2]}}
             </div>
             <div class='price'>
-                {{price}}
+                {{product.price}}
             </div>
         </a>
     </div>

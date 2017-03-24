@@ -7,7 +7,7 @@ angular.module('gibson').controller('mainCTRL', function($scope, mainSRV){
  //       console.log('promise' + promise);
         promise.then(function(response){
             $scope.products = response.data;
- //           console.log($scope.products);
+            console.log($scope.products);
         });
     };
  getProducts();

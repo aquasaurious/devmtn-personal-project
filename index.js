@@ -44,9 +44,8 @@ app.get('/', function(req, res, next) {
 app.post('/guitars', function(req, res, next) {
   for (var i=0; i < guitars.length; i++) {
     guitar = guitars[i];
-    console.log(guitar);
+    //console.log(guitar);
     db.insert_guitar(guitar.classification, guitar.imgsrc, guitar.model, guitar.qualities, guitar.price, function(err, prod) {
-      console.log(err, prod);
       res.status(200).send('bonsoir monsoiur');
     })
   }
