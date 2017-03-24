@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+.shop-body{
+    
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+}
+
+.products {
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.products, .shop-desc, .model-year-banner {
+    padding: 20px;
+}
+
+.shop-header {
+    display: flex;
+}
+
+.shop-title {
+    padding-left: 20px;
+    border-left: 1px solid #c1c1c1;
+    width: 66%;
+}
+
+.shop-logo {
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.shop-logo img, .model-year-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shop-headline {
+    font: 400 50px 'Lato', sans-serif;
+}
+
+.shop-desc h2 {
+    font: 300 55px 'Lato', sans-serif;
+    padding-bottom: 15px;
+}
+

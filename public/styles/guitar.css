@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
+
+.product-container {
+    display: inline-block;
+    position: relative;
+    padding: 0 3px;
+    min-height: 30px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.item-content {
+    
+    width: 117px;
+    border: 1px solid #d7d7d7;
+}
+
+.item-content a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.item-content a:hover {
+    transform: translate(0, 20px);
+}
+
+.thumb {
+    min-height: 136px;
+    width: 100%;
+}
+
+.name {
+    font: 700 15px/19px 'Oswald', sans-serif;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 70px;
+}
+
+.qualities {
+    font: 300 15px/18px 'Oswald', sans-serif;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    background-color: #ebebeb;
+    height: 65px;
+}
+
+.price {
+    padding: 5px;
+    text-align: center;
+    color: #86a1c3;
+    font: 700 15px/19px 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}

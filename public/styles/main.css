@@ -101,3 +101,11 @@ body {
         display: none;
     }
 }
+
+* { 
+/* adds animation for all transitions */ 
+-webkit-transition: .25s ease-in-out; 
+-moz-transition: .25s ease-in-out; 
+-o-transition: .25s ease-in-out; 
+transition: .25s ease-in-out;  
+} 

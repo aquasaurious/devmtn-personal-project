@@ -96,15 +96,31 @@ $animationDuration: .2s;
 
 .mobile-menu {
     display: none;
-    width: 100%;
     text-align: center;
+    width: 100%;
+    margin: 0 15px 15px 15px;
+    transition: transform 2s ease-in-out;
 }
 
-.mobile-menu ul li{
+.mobile-nav {
+    display: block;
     width: 100%;
+    border-top: 1px solid #c1c1c1;
+}
+
+
+.mobile-nav li {
+    display: flex;
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #c1c1c1;
-    padding 10px;
-    height: auto;
+    border-top: 0;
+    padding: 10px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #787878;
 }
 
 #hamburger {
@@ -154,6 +170,10 @@ $animationDuration: .2s;
 
     .mobile-menu {
         display: none;
+    }
+
+    .nav-menu {
+        flex-direction: row;
     }
 
 }
