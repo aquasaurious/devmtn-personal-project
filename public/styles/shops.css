@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 .shop-body{
-    
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -11,12 +10,22 @@
     line-height: 1.428571429;
 }
 
-.products {
+
+.product-carousel {
+    display: flex;
     border-bottom: 1px solid #c1c1c1;
 }
 
+.products {
+    width: 126px;
+}
+
 .products, .shop-desc, .model-year-banner {
-    padding: 20px;
+    padding: 15px 5px;
+}
+
+.slick-arrow {
+    display: none;
 }
 
 .shop-header {

@@ -3,7 +3,7 @@ angular.module('gibson', ['ui.router']).config(function($stateProvider, $urlRout
     $stateProvider
     .state('home', {
         url: '/',
-        templateUrl: './views/index.html',
+        templateUrl: './views/main.html',
         controller: 'mainCTRL'
     })
     .state('usa', {

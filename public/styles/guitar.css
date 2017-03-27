@@ -1,4 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
+
+
 
 .product-container {
     display: inline-block;
@@ -9,9 +12,17 @@
     z-index: 999;
 }
 
+.product-container:hover {
+    -webkit-transform: translate(0, -15px);
+    -moz-transform: translate(0, -15px);
+    -ms-transform: translate(0, -15px);
+    -o-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+}
+
 .item-content {
     
-    width: 117px;
+    width: 118px;
     border: 1px solid #d7d7d7;
 }
 
@@ -31,7 +42,7 @@
 }
 
 .name {
-    font: 700 15px/19px 'Oswald', sans-serif;
+    font: 700 13px/19px 'Oswald', sans-serif;
     text-align: center;
     padding: 5px;
     border-top: 1px solid #000;
@@ -40,6 +51,9 @@
 }
 
 .qualities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font: 300 15px/18px 'Oswald', sans-serif;
     text-align: center;
     padding: 5px;

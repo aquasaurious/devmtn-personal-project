@@ -6,13 +6,16 @@
     <title>Givesome Guitars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--STYLES-->
+    <link href="./dist/all.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <!--STYLES
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/main.css"  rel="stylesheet">
     <link href="./styles/header.css" rel="stylesheet">
     <link href="./styles/footer.css" rel="stylesheet">
     <link href="./styles/shops.css" rel="stylesheet">
-    <link href="./styles/guitar.css" rel="stylesheet">
+    <link href="./styles/guitar.css" rel="stylesheet">-->
 </head>
 <body ng-controller="mainCTRL">
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -25,11 +28,27 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="./dist/bundle.js"></script>
+<!--    <script src="./js/app.js"></script>
     <script src="./js/mainCTRL.js"></script>
     <script src="./js/mainSRV.js"></script>
     <script src="./js/headerDIR.js"></script>
     <script src="./js/footerDIR.js"></script>
     <script src="./js/guitarDIR.js"></script>
-    
+  --> 
+  
+      <script type="text/javascript">
+         $(document).ready(function(){
+          $('.product-carousel').slick({
+         "slidesToScroll": 1,
+         "variableWidth": true,
+         "swipeToSlide": true,
+         "infinite": false,
+         "prevArrow": "",
+         "nextArrow": ""
+         });
+        });
+  </script>
 </body>

@@ -5,6 +5,7 @@ body {
     font-size: 12px;
     box-sizing: border-box;
     display: block;
+    line-height: 1.428571429;
 }
 
 .global {
@@ -53,6 +54,21 @@ body {
 
 .shop-division a img {
     max-width: 100%;
+    height: auto;
+    border: 1px solid #c2c2c2;
+}
+
+.central-body {
+    display: flex;
+}
+
+.column {
+    max-width: 50%;
+    height: auto;
+}
+
+.social-feed {
+    max-width: 25%;
     height: auto;
     border: 1px solid #c2c2c2;
 }
