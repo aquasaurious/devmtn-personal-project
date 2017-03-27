@@ -30,8 +30,8 @@ angular.module('gibson', ['ui.router']).config(function($stateProvider, $urlRout
     })
     .state('product', {
         url: "/:shopID/:productID",
-        templateUrl: './js/products/productsTMPL.html',
-        controller: 'productsCTRL'
+        templateUrl: './acoustic/76.html',
+        controller: 'mainCTRL'
     })
     
     $urlRouterProvider.otherwise('/');

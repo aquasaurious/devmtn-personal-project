@@ -60,10 +60,37 @@ body {
 
 .central-body {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+
 }
 
 .column {
     max-width: 50%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.column div {
+    padding-bottom: 20px;
+}
+
+.left-column {
+    padding-right: 10px;
+}
+
+.right-column {
+    padding-left: 10px;
+}
+
+.right-column img {
+    width: 100%;
+    height: auto;
+}
+
+.ads img {
+    width: 100%;
     height: auto;
 }
 
@@ -71,6 +98,23 @@ body {
     max-width: 25%;
     height: auto;
     border: 1px solid #c2c2c2;
+}
+
+.social-title, .division-title {
+    font-weight: bold;
+    font: 38px/38px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+    background-color: #7F7F7F;
+    margin-bottom: 5px;
+    text-align: left;
+    height: 40px;
+}
+
+.section-name{
+    background-color: #fff;
+    padding-right: 15px;
+    font: 400 40px 'oswald', sans-serif;
+    letter-spacing: 1px;
+    box-sizing: border-box;
 }
 
 @media(max-width: 500px) {
@@ -99,6 +143,17 @@ body {
 
     .list {
         display: none;
+    }
+
+    .central-body {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .column {
+        max-width: 100%;
+        padding: 0;
     }
 
 }
