@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.428571429;
+}
+
+.global {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 15px;
+}
+
+.main-banner img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #c2c2c2;
+}
+
+.shop-wrapper {
+    max-width: 100%;
+    
+}
+
+.shops {
+    margin-top: 20px;
+    display: flex;
+}
+
+.shop-banner {
+    
+    box-sizing: border-box;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.shop-division {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.shop-division a {
+
+}
+
+.shop-division a img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #c2c2c2;
+}
+
+.central-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+
+}
+
+.column {
+    max-width: 50%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.column div {
+    padding-bottom: 20px;
+}
+
+.left-column {
+    padding-right: 10px;
+}
+
+.right-column {
+    padding-left: 10px;
+}
+
+.right-column img {
+    width: 100%;
+    height: auto;
+}
+
+.ads img {
+    width: 100%;
+    height: auto;
+}
+
+.social-feed {
+    max-width: 25%;
+    height: auto;
+    border: 1px solid #c2c2c2;
+}
+
+.social-title, .division-title {
+    font-weight: bold;
+    font: 38px/38px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+    background-color: #7F7F7F;
+    margin-bottom: 5px;
+    text-align: left;
+    height: 40px;
+}
+
+.section-name{
+    background-color: #fff;
+    padding-right: 15px;
+    font: 400 40px 'oswald', sans-serif;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+@media(max-width: 500px) {
+    .full {
+        display: none;
+    }
+
+    .shops {
+        flex-direction: column;
+    }
+
+    .shop-division {
+        width: 100%;
+    
+        margin-bottom: 15px;
+    }
+}
+
+@media(min-width: 501px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .list {
+        display: none;
+    }
+
+    .central-body {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .column {
+        max-width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+    .list {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 900px) {
+    .search {
+        display: none;
+    }
+}
+
+* { 
+/* adds animation for all transitions */ 
+-webkit-transition: .25s ease-in-out; 
+-moz-transition: .25s ease-in-out; 
+-o-transition: .25s ease-in-out; 
+transition: .25s ease-in-out;  
+} 

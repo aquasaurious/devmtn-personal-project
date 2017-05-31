@@ -1,0 +1,23 @@
+
+<div class='product-container'>
+    <div class='item-content'>
+        <a href='/acoustic/{{product.id}}.html'>
+            <div class='thumb'>
+                <img ng-src='../img/acoustic/{{product.imgsrc}}' alt='hi{{product.imgsrc}}'>
+            </div>
+            <div class='name'>
+                {{product.model}}
+            </div>
+            <div class='qualities'>
+                {{product.qualities[0]}}
+                <br>
+                {{product.qualities[1]}}
+                <br>
+                {{product.qualities[2]}}
+            </div>
+            <div class='price'>
+                {{product.price}}
+            </div>
+        </a>
+    </div>
+</div>
