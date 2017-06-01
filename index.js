@@ -8,7 +8,7 @@ var massive = require('massive');
 var bodyParser = require('body-parser');
 
 var connString = "postgres://xejkelis:VaOlrEOnc3t0QDedLzDVho4rb5N2FgPG@stampy.db.elephantsql.com:5432/xejkelis";
-const port = 8080;
+const port = 80;
 
 var app = express();
 
